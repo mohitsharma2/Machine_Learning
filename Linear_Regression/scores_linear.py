@@ -1,9 +1,11 @@
 # Now if I want to get 100 scores 
 # How much hours do i need to study 
+#Hint
+
 
 # Reverse the features and labels and try the model and prediction again
 # You might need to reshape the features by features = featurtes.reshape(25,1)
-# Now regressor.predict(100)
+
 
 import pandas as pd
 import numpy as np
