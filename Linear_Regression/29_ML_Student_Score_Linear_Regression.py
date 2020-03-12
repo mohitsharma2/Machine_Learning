@@ -186,6 +186,9 @@ print (regressor.coef_) # slope of the line (9.77580339)
 # y = (m)x + (c)   where m is the slope and c is the inetrcept
 print (regressor.coef_*10 + regressor.intercept_) # [100.24170731]
 
+"""
+#either you can do above last 3 steps or you can do below 1 step for prediction
+"""
 
 # This can also be predicted using a function 
 print (regressor.predict([[10]])) # [100.24170731]  this is a label
