@@ -39,8 +39,8 @@ import matplotlib.pyplot as plt
 df=pd.read_csv("C:/Users/mohit/Desktop/Machine_Learning/Linear_Regression/foodtruck.csv")
 #print(df)
 
-features=df.iloc[:,:-1]
-labels=df.iloc[:,1]
+features=df.iloc[:,:-1].values
+labels=df.iloc[:,1].values
 
 #then the train test split
 from sklearn.model_selection import train_test_split  
@@ -58,12 +58,21 @@ regressor.fit(features_train, labels_train)
 print (regressor.predict([[3.073]]))
 
 """
-output==================================================
+output========================================================================
 
 [-0.59471756]
 
 """
 
+plt.title()
 
+
+
+plt.scatter(features, labels, color = 'red')
+plt.plot(features,regressor.predict(features), color = 'blue')
+plt.title('Population-Profit')
+plt.xlabel('Population')
+plt.ylabel('Profit')
+plt.show()
 
 
