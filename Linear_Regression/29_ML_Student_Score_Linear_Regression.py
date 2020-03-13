@@ -221,7 +221,7 @@ plt.show()
 # How much hours do i need to study 
 
 # Reverse the features and labels and try the model and prediction again
-# You might need to reshape the features by features = featurtes.reshape(25,1)
+# You might need to reshape the features by features = features.reshape(25,1)
 # Now regressor.predict(100)
 
 
@@ -250,7 +250,7 @@ plt.show()
 # and then we would compare your answers with his set of answers 
 
 # Lets assume now he gives you 40Q
-# Lets assume you have given 40A' == 40A
+# Lets assume you have given 40Q' == 40A
 
 # The better the comparison score, the better is the Training of your Brain
 
@@ -277,7 +277,7 @@ import matplotlib.pyplot as plt
 
 
 #imports the CSV dataset using pandas
-dataset = pd.read_csv('C:/Users/mohit/Desktop/Machine_Learning/student_scores.csv')  
+dataset = pd.read_csv('C:/Users/mohit/Desktop/Machine_Learning/Linear_Regression/student_scores.csv')  
 
 
 #prepare the data to train the model
@@ -300,7 +300,7 @@ regressor.fit(features_train, labels_train)
 
 
 # There would be change in the intercept and slope since the data is less
-print(regressor.intercept_)  # intercept of the line (2.483673405373196)
+print(regressor.intercept_)  # intercept of the line (1.0541144761913515)
 print (regressor.coef_) # slope of the line (9.77580339)
 
 
