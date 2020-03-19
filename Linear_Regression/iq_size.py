@@ -28,7 +28,6 @@ Column 4: The weight (Weight) of student (pounds)
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 
 dataset=pd.read_csv("C:/Users/mohit/Desktop/Machine_Learning/Linear_Regression/iq_size.csv")
 
